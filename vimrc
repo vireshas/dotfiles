@@ -8,9 +8,9 @@ syntax enable
 set background=dark
 
 "all the defaults
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 set expandtab
 set nu
 set nobackup
@@ -51,17 +51,15 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'solarized'
-colorscheme solarized
 Bundle 'desert-warm-256'
+colorscheme desert
 Bundle 'bling/vim-airline'
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
-" ...
 
 "removes trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
