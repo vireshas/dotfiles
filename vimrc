@@ -51,15 +51,18 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'solarized'
 Bundle 'desert-warm-256'
 colorscheme desert
 Bundle 'bling/vim-airline'
+Bundle 'jordwalke/flatlandia'
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
+" ...
 
 "removes trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
