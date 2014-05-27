@@ -17,7 +17,10 @@ set nobackup
 set noswapfile
 set nowb
 set autoindent
+set copyindent
+set showmatch
 set smartindent
+set smarttab
 set smartcase
 set incsearch
 set hlsearch
@@ -84,5 +87,9 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 filetype plugin indent on     " required!
